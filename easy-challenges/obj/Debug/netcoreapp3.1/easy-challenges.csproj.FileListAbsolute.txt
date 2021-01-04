@@ -1,0 +1,13 @@
+C:\Users\monsi\Desktop\myGitWorkstation\c-challenges-beginner-to-advanced-\easy-challenges\bin\Debug\netcoreapp3.1\easy-challenges.exe
+C:\Users\monsi\Desktop\myGitWorkstation\c-challenges-beginner-to-advanced-\easy-challenges\bin\Debug\netcoreapp3.1\easy-challenges.deps.json
+C:\Users\monsi\Desktop\myGitWorkstation\c-challenges-beginner-to-advanced-\easy-challenges\bin\Debug\netcoreapp3.1\easy-challenges.runtimeconfig.json
+C:\Users\monsi\Desktop\myGitWorkstation\c-challenges-beginner-to-advanced-\easy-challenges\bin\Debug\netcoreapp3.1\easy-challenges.runtimeconfig.dev.json
+C:\Users\monsi\Desktop\myGitWorkstation\c-challenges-beginner-to-advanced-\easy-challenges\bin\Debug\netcoreapp3.1\easy-challenges.dll
+C:\Users\monsi\Desktop\myGitWorkstation\c-challenges-beginner-to-advanced-\easy-challenges\bin\Debug\netcoreapp3.1\easy-challenges.pdb
+C:\Users\monsi\Desktop\myGitWorkstation\c-challenges-beginner-to-advanced-\easy-challenges\obj\Debug\netcoreapp3.1\easy-challenges.csprojAssemblyReference.cache
+C:\Users\monsi\Desktop\myGitWorkstation\c-challenges-beginner-to-advanced-\easy-challenges\obj\Debug\netcoreapp3.1\easy-challenges.AssemblyInfoInputs.cache
+C:\Users\monsi\Desktop\myGitWorkstation\c-challenges-beginner-to-advanced-\easy-challenges\obj\Debug\netcoreapp3.1\easy-challenges.AssemblyInfo.cs
+C:\Users\monsi\Desktop\myGitWorkstation\c-challenges-beginner-to-advanced-\easy-challenges\obj\Debug\netcoreapp3.1\easy-challenges.csproj.CoreCompileInputs.cache
+C:\Users\monsi\Desktop\myGitWorkstation\c-challenges-beginner-to-advanced-\easy-challenges\obj\Debug\netcoreapp3.1\easy-challenges.dll
+C:\Users\monsi\Desktop\myGitWorkstation\c-challenges-beginner-to-advanced-\easy-challenges\obj\Debug\netcoreapp3.1\easy-challenges.pdb
+C:\Users\monsi\Desktop\myGitWorkstation\c-challenges-beginner-to-advanced-\easy-challenges\obj\Debug\netcoreapp3.1\easy-challenges.genruntimeconfig.cache
