@@ -26,11 +26,13 @@ namespace easy_challenges
             // multiplyThreeNumbers();
             // averageOfFourNumbers();
             // characterRemover();         // method never works rekt
-                
-                 
 
-            System.Console.WriteLine(method1(x:23, y:23));   // key:value pair syntax of calling a method that has params
-            System.Console.WriteLine( method1(x:24, y:56));
+
+
+            System.Console.WriteLine(method1(x: 23, y: 23));   // key:value pair syntax of calling a method that has params
+            System.Console.WriteLine(method1(x: 24, y: 56));
+
+            oddPrinter();
         }
 
 
@@ -180,6 +182,29 @@ namespace easy_challenges
             return x + y;
         }
 
+
+        // Write a C# program to print the odd numbers from 1 to 99. Prints one number per line.
+        // odd numbers are not divisible by 2 and dont have a reminder 
+        static void oddPrinter()
+        {
+            int lastNumber = 99;
+
+
+            for (int currentNumber = 1; currentNumber <= lastNumber; currentNumber++)
+            {
+                int divisionBy2rem = currentNumber % 2;   // divide the number by 2 and get the remainder 
+
+                if (divisionBy2rem != 0)
+                {
+                    System.Console.Write(currentNumber +" ");
+                    
+                }
+                
+            }
+            System.Console.WriteLine();
+            System.Console.WriteLine("press any key to exit ");
+            Console.ReadKey();
+        }
 
 
 
