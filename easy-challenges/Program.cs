@@ -25,7 +25,12 @@ namespace easy_challenges
             //  swapping();
             // multiplyThreeNumbers();
             // averageOfFourNumbers();
-            characterRemover();         // method never works rekt
+            // characterRemover();         // method never works rekt
+                
+                 
+
+            System.Console.WriteLine(method1(x:23, y:23));   // key:value pair syntax of calling a method that has params
+            System.Console.WriteLine( method1(x:24, y:56));
         }
 
 
@@ -154,7 +159,7 @@ namespace easy_challenges
             }
             if (myString.Contains(letter))
             {
-                string newString=myString.Remove(myString.IndexOf(letter));
+                string newString = myString.Remove(myString.IndexOf(letter));
                 System.Console.WriteLine($"removed the '{letter}' letter from the string \n the new string is {newString}");
 
 
@@ -164,6 +169,15 @@ namespace easy_challenges
                 System.Console.WriteLine("the letter provided does not exist in the string given");
             }
 
+        }
+        // Write a C# program to compute the sum of two given integers, if two values are equal then return the triple of their sum
+        static int method1(int x, int y) // the method caller should provide the following arguments
+        {
+            if (x == y)
+            {
+                return (x + y) * 3;
+            }
+            return x + y;
         }
 
 
