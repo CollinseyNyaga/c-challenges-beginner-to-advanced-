@@ -29,10 +29,10 @@ namespace easy_challenges
 
 
 
-            System.Console.WriteLine(method1(x: 23, y: 23));   // key:value pair syntax of calling a method that has params
-            System.Console.WriteLine(method1(x: 24, y: 56));
+            // System.Console.WriteLine(method1(x: 23, y: 23));   // key:value pair syntax of calling a method that has params
+            // System.Console.WriteLine(method1(x: 24, y: 56));
 
-            oddPrinter();
+            // oddPrinter();
         }
 
 
