@@ -1,5 +1,6 @@
 ﻿// the challenges are in form of methods 
 using System;
+using System.IO;
 
 namespace easy_challenges
 {
@@ -33,6 +34,8 @@ namespace easy_challenges
             // System.Console.WriteLine(method1(x: 24, y: 56));
 
             // oddPrinter();
+            //
+            fileCheck();
         }
 
 
@@ -206,6 +209,16 @@ namespace easy_challenges
             Console.ReadKey();
         }
 
+        // Write a C# program to find the size of a specified file in bytes.
+        // To do this , you need the System.IO namespace which deals with output 
+
+        static void fileCheck()
+        {
+            string filePath = "C:\\Users\\monsi\\Desktop\\myGitWorkstation\\c-challenges-beginner-to-advanced-\\easy-challenges\\Program.cs";
+            FileInfo f = new FileInfo(filePath);
+
+            System.Console.WriteLine(f.Extension);
+        }
 
 
 
