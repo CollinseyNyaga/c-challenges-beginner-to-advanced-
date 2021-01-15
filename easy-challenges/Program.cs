@@ -35,7 +35,10 @@ namespace easy_challenges
 
             // oddPrinter();
             //
-            fileCheck();
+            // fileCheck();
+            // arrayMultiplier();
+            System.Console.WriteLine(twentyCheck());
+
         }
 
 
@@ -199,10 +202,10 @@ namespace easy_challenges
 
                 if (divisionBy2rem != 0)
                 {
-                    System.Console.Write(currentNumber +" ");
-                    
+                    System.Console.Write(currentNumber + " ");
+
                 }
-                
+
             }
             System.Console.WriteLine();
             System.Console.WriteLine("press any key to exit ");
@@ -215,10 +218,84 @@ namespace easy_challenges
         static void fileCheck()
         {
             string filePath = "C:\\Users\\monsi\\Desktop\\myGitWorkstation\\c-challenges-beginner-to-advanced-\\easy-challenges\\Program.cs";
-            FileInfo f = new FileInfo(filePath);
 
-            System.Console.WriteLine(f.Extension);
+
+            FileInfo f = new FileInfo(filePath);    // creates an instance of the class and constructs the class with a filepath parameter.
+
+            System.Console.WriteLine(f.Length);     // the length property pulls out the size of the file of the filepath 
         }
+
+
+
+
+        //  Write a C# program to multiply corresponding elements of two arrays of integers 
+        // eg: Array1: [1, 3, -5, 4]
+        //Array2: [1, 4, -5, -2]
+        //Multiply corresponding elements of two arrays:  1 12 25 -8
+
+        static void arrayMultiplier()
+        {
+            int[] myarr1 = { 1, 3, -5, 4 };
+            int[] myarr2 = { 1, 4, -5, 2 };
+            int[] resultArray = new int[4];
+            int a = 0;
+
+            // start looping through the elements of the array.
+            for (int i = 0; i < myarr1.Length; i++)
+            {
+                int multiplicationResult = myarr1[i] * myarr2[i]; // multiplies the value of the arrays at the index i
+                System.Console.WriteLine(multiplicationResult);
+
+                resultArray[a] = multiplicationResult;
+                a++;
+
+            }
+
+            System.Console.WriteLine($"{resultArray[0]} , {resultArray[1]} ,{resultArray[2]} ,  {resultArray[3]} ");
+            System.Console.WriteLine($"the length of the array is : {resultArray.Length}"); // prints the length of the resultArray using string interpolation
+
+
+        } // end of the method
+
+
+
+        // Write a C# program to check the nearest value of 20 of two given integers and return 0 if two numbers are same. 
+        // eg: First Number : 21
+        //     Second Number : 12
+        //     The nearest = 21
+
+        static int twentyCheck()
+        {
+            
+            System.Console.WriteLine("CHECK FOR THE NEAREST NUMBER TO TWENTY ");
+
+            System.Console.WriteLine("enter the first number:");
+            int X = Convert.ToInt32(Console.ReadLine());
+
+            System.Console.WriteLine("enter the second number:");
+            int Y = Convert.ToInt32(Console.ReadLine());
+
+            uint number = 20;       // we use unsigned integer to remove the sign of the number
+            uint Xdiff = number - (uint)X;      // cast the entered X integer to an unsigned integer 
+            uint Ydiff =number - (uint)Y;       // cast the entered Y also
+
+            if (Xdiff > Ydiff)                  // if xdiff is greater than ydiff
+            {                                   
+                return X;       
+            }else if (Ydiff > Xdiff)            // if ydiff is greater than xdiff
+            {
+                return Y;
+            }
+            else if (Xdiff == Ydiff)            // if xdiff is equal to ydiff
+            {
+                return 0;
+            }
+            
+            return 0;                           // the default return value
+            
+        }  // end of the method.
+
+
 
 
 
