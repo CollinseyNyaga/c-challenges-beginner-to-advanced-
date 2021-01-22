@@ -37,7 +37,8 @@ namespace easy_challenges
             //
             // fileCheck();
             // arrayMultiplier();
-            System.Console.WriteLine(twentyCheck());
+            // System.Console.WriteLine(twentyCheck());
+            OddArrayCheck();
 
         }
 
@@ -266,7 +267,7 @@ namespace easy_challenges
 
         static int twentyCheck()
         {
-            
+
             System.Console.WriteLine("CHECK FOR THE NEAREST NUMBER TO TWENTY ");
 
             System.Console.WriteLine("enter the first number:");
@@ -277,12 +278,13 @@ namespace easy_challenges
 
             uint number = 20;       // we use unsigned integer to remove the sign of the number
             uint Xdiff = number - (uint)X;      // cast the entered X integer to an unsigned integer 
-            uint Ydiff =number - (uint)Y;       // cast the entered Y also
+            uint Ydiff = number - (uint)Y;       // cast the entered Y also
 
             if (Xdiff > Ydiff)                  // if xdiff is greater than ydiff
-            {                                   
-                return X;       
-            }else if (Ydiff > Xdiff)            // if ydiff is greater than xdiff
+            {
+                return X;
+            }
+            else if (Ydiff > Xdiff)            // if ydiff is greater than xdiff
             {
                 return Y;
             }
@@ -290,12 +292,31 @@ namespace easy_challenges
             {
                 return 0;
             }
-            
+
             return 0;                           // the default return value
-            
+
         }  // end of the method.
 
 
+        // Write a C# program to check if an array contains an odd number.
+        static void OddArrayCheck()
+        {
+            int[] arr1 = { 2, 1, 5, 7, 9 };
+            int evenCheck;
+            int oddCheck;
+
+            foreach (int i in arr1)
+            {
+                evenCheck = i % 2;  // checks for even number 
+                oddCheck = i % 3;   // checks for odd
+
+                if (evenCheck != 0 && oddCheck == 0)
+                {
+                    System.Console.WriteLine($"The number is an odd number . At {i}");
+                }
+            }
+
+        }   // end of the method 
 
 
 
